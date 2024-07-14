@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "debug_toolbar",
     "taxi",
+    "crispy_bootstrap4",
+    "crispy_forms",
 ]
 
 MIDDLEWARE = [
@@ -77,6 +79,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "taxi_service.wsgi.application"
 
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
+
+CRISPY_TEMPLATE_PACK="bootstrap4"
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
@@ -120,7 +125,7 @@ LOGIN_REDIRECT_URL = "/"
 
 LANGUAGE_CODE = "en-us"
 
-TIME_ZONE = "Europe/Kiev"
+TIME_ZONE = "UTC"
 
 USE_I18N = True
 
